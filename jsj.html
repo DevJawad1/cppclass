@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .left{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: navy;
+            position: relative;
+            animation: one 700ms linear infinite forwards;
+        }
+        .right{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: hotpink;
+            position: relative;
+            animation: two 700ms linear infinite forwards;
+        }
+
+        @keyframes one {
+            50%{
+                margin-left: 20px;
+            }
+            100%{
+                z-index: 1;
+            }
+        }
+        @keyframes two {
+            50%{
+                margin-left: -130px;
+            }
+            100%{
+            }
+        }
+        .cover{
+            width: 15%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tr-dot {
+            width: 60px;
+            height: 55px;
+            /* border: 1px solid; */
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 8px;
+            gap: 4px;
+            border-radius: 50%;
+            animation: trdot 600ms linear infinite forwards;
+
+        }
+        .tr-dot div{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: navy;
+            position: relative;
+        }
+        @keyframes trdot {
+            50%{
+                transform: rotate(180deg);;
+            }
+            100%{
+                transform: rotate(360deg);;
+
+            }
+        }
+        .tr-dot .two{
+            top: -20px;
+            animation: trtwo 600ms linear infinite forwards;
+        }
+        .tr-dot .one{
+            margin-left: 0px;
+            background-color: navy;
+            animation: trone 600ms linear infinite forwards;
+            position: relative;
+        }
+        .tr-dot .three{
+            animation: trtre 600ms linear infinite forwards;
+            margin-left: 0px;
+            background-color: hotpink;
+
+        }
+
+        @keyframes trtwo {
+            50%{
+                top: 0px;
+            }
+            100%{
+                z-index: 1;
+
+            }
+        }
+        @keyframes trone {
+            50%{
+                margin-left: 0px;
+            }
+            100%{
+                /* background-color: hotpink; */
+            }
+        }
+        @keyframes trtre {
+            50%{
+                margin-left: -23px;
+                /* background-color: navy; */
+            }
+        }
+    </style>
+
+    <div class="cover">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <!-- animation2 -->
+
+    <!-- <div class="tr-dot">
+        <div class="one" style="visibility: hidde;"></div>
+        <div class="two" style="visibility: hid;"></div>
+        <div class="three" style="visibility: hidde;"></div>
+    </div> -->
+
+    <!-- animation3 -->
+
+    <div>
+        
+    </div>
+</body>
+</html>
